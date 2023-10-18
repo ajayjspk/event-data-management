@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url("../../templates/pics/bg.webp");
+}
+.stddetails{
+    margin-top: 50px;
+   height: 300px;
+   background-color: rgb(69, 69, 69);
+   display: grid;
+   align-items: center;
+   justify-content: center; 
+}
+
+h2{text-align: center;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+}
+.addeves{
+    display: grid;
+   align-items: center;
+   justify-content: center; 
+   
+    background-color: rgb(69, 69, 69);
+}
+input{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+}
+.aaaa{
+    display: flex;
+    flex-direction: column;
+}

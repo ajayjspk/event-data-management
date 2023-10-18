@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD EVENTS</title>
+</head>
+<body>
+    <form id="login" class="input-group" action="addevent", method="post" enctype="multipart/form-data">{% csrf_token %}
+
+        <input type="text" class="input-field" name="event_location" placeholder="enter venue">
+        <input type="text" class="input-field" name="event_name" placeholder="Event name">
+        <input type="date" class="input-field" name="event_date" placeholder="password">
+        <textarea  rows="6" cols="60" name="event_description" placeholder="Enter Event Discription"></textarea>
+        <input type="file"  name="event_image" id="file-input" />
+        <button type="submit" class="submit-btn">SAVE</button>
+    </form> 
+    
+
+
+
+</body>
+</html>

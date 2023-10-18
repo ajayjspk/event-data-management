@@ -1,0 +1,114 @@
+/* Navigation bar */
+/* body{
+    background-color: rgb(232, 228, 216);
+} */
+html{
+    scroll-behavior: auto;
+}
+body{
+    font-family: Poppins;  
+    font-size: large;
+}
+.maintitle{
+    position: relative;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: xx-large;
+    text-align: left;
+    font-family: "Audiowide", sans-serif;
+}
+nav{
+    font-size: x-large;
+    font-family: "Sofia", sans-serif;
+    
+}
+section{
+    height: 500px;
+    background-color: rgb(217, 205, 156);
+    bottom: 1%;
+}
+.navbar{
+    position: fixed;
+    top: 3%;
+    background-color: #fff;
+}
+.navbar-nav{
+    position:relative;
+    left: 100%;
+}
+.animeblock{
+    position: relative;
+    align-items: center;
+    top:150px;
+}
+.anime{
+    color: rgb(97, 28, 162);
+    font-weight: bold;
+}
+.abt-img{
+    width:50px;
+    height: auto;
+}
+.nav-link{
+    margin-left: 10%;
+    margin-right: auto;
+}
+.nav-link:hover{
+    background-color: #fff;
+
+}
+footer{
+    padding-top: 0px;
+    background-color: rgb(167, 156, 114);
+}
+
+.title-image{
+    width: 15%;
+    margin-top: 10%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+.container-fluid{
+    padding: 7%  15%;
+}
+#title .container-fluid{
+
+}
+.loginbutton{
+    position:absolute;
+    align-items: center;
+}
+.eventlistpage{
+    background-color: rgb(62, 56, 56);
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.car-img{
+    height: 400px;
+    width: 300px;
+}
+.spancontent{
+    font-size: 15px;
+}
+.page4{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    height:110%;
+}
+#page3{
+    background-color: rgb(178, 163, 101);
+}
+.page5{
+    font-style: italic;
+}
+.icons{
+    size: 5cm;
+}

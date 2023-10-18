@@ -1,0 +1,55 @@
+{% load static %}
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+    <link rel="stylesheet" href="{%  static 'css/logincss.css' %}">
+</head>
+
+<body>
+    <div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()" >LOG In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Registration</button>
+        </div>
+        <form id="login" class="input-group" action="loginuser", method="post">{% csrf_token %}
+
+            <input type="hidden" name="sub_type" value="login">
+            <input type="text" class="input-field" name="user_id" value="ajayjspk" placeholder="user id">
+            <input type="password" class="input-field" name="password" value="1234" placeholder="password">
+            <input type="checkbox" class="chech-box">
+            <span>Remember password</span>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form> 
+
+        <form id="register" class="input-group" action="login" method="POST">{% csrf_token %}
+            <!-- <input type="hidden" name="sub_type" value="register"> -->
+            <input type="text" class="input-field" name="user_id" placeholder="user id">
+            <input type="email" class="input-field" name="email" placeholder="email id">
+            <input type="password" class="input-field" name="password" placeholder="password">
+            <input type="password" class="input-field" name="confirm_password" placeholder="Confirm password">
+            <input type="checkbox" class="chech-box" name=""><span>I Agree to terms and conditions</span>
+            <button type="submit" class="submit-btn" name="">Register</button>
+        </form>
+    </div>
+</div>
+<script>
+var x=document.getElementById("login");
+var y=document.getElementById("register");
+var z=document.getElementById("btn");
+function register(){
+    x.style.left="-400px";
+    y.style.left="50px";
+    z.style.left="110px";
+
+}
+function login(){
+    x.style.left="50px";
+    y.style.left="450px";
+    z.style.left="0";
+
+}
+</script>
+</body>
+</html>
